@@ -28,10 +28,12 @@ testonce:
 setup: update .git/hooks/pre-commit
 
 .PHONY: pre-commit
-pre-commit: ${uv-run} pre-commit
+pre-commit:
+	${uv-run} pre-commit
 
 .PHONY: pre-commit-all
-pre-commit-all: ${uv-run} pre-commit run --all-files
+pre-commit-all: 
+	${uv-run} pre-commit run --all-files
 
 .PHONY: check
 check:
