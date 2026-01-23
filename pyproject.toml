@@ -88,6 +88,11 @@ homepage = "https://github.com/EO-DataHub/"
 repository = "CHANGEME-https://github.com/EO-DataHub/<CHANGEME>"
 changelog = "CHANGEME-https://github.com/EO-DataHub/<CHANGEME>/main/CHANGELOG.md"
 
+
+[tool.uv]
+# see https://docs.astral.sh/uv/concepts/projects/config/#project-packaging to see if you need to set this to true
+package = false
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
